@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moonyerim2/petmo-deaign-system.git"
+    "url": "git+https://github.com/moonyerim2/petmo-design-system.git"
   },
   "keywords": [
     "design system",
@@ -21,9 +21,9 @@
   "author": "moon yerim",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/moonyerim2/petmo-deaign-system/issues"
+    "url": "https://github.com/moonyerim2/petmo-design-system/issues"
   },
-  "homepage": "https://github.com/moonyerim2/petmo-deaign-system#readme",
+  "homepage": "https://github.com/moonyerim2/petmo-design-system#readme",
   "dependencies": {
     "@types/styled-components": "^5.1.26",
     "react": "^18.2.0",
