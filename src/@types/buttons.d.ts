@@ -4,3 +4,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   shape: "round" | "angled" | "default";
   children: ReactNode;
 }
+
+interface IconTextButtonProps extends ButtonProps {
+  iconLocation: string;
+  Icon: () => JSX.Element;
+}
