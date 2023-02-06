@@ -8,9 +8,10 @@ function IconTextButton({
   iconLocation,
   Icon,
   children,
+  ...rest
 }: IconTextButtonProps) {
   return (
-    <StyledButton size={size} color={color} shape={shape}>
+    <StyledButton size={size} color={color} shape={shape} {...rest}>
       {iconLocation === "left" && <Icon />}
       {children}
       {iconLocation === "right" && <Icon />}
