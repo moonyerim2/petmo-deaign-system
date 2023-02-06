@@ -14,3 +14,8 @@ interface StyledRoundButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size: "large" | "small";
 }
+
+interface IconButtonProps extends StyledRoundButtonProps {
+  size: StyledRoundButtonSize;
+  Icon: () => JSX.Element;
+}
