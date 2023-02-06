@@ -1,6 +1,20 @@
 import { DefaultTheme } from "styled-components";
 
 export type ButtonThemeTypes = typeof buttonTheme;
+export type roundButtonThemeTypes = typeof roundButtonTheme;
+
+export const roundButtonTheme = {
+  size: {
+    large: {
+      width: "36px",
+      height: "36px",
+    },
+    small: {
+      width: "26px",
+      height: "26px",
+    },
+  },
+};
 
 export const buttonTheme = (theme: DefaultTheme) => {
   const { color, borderRadius } = theme;

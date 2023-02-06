@@ -9,3 +9,8 @@ interface IconTextButtonProps extends ButtonProps {
   iconLocation: string;
   Icon: () => JSX.Element;
 }
+
+interface StyledRoundButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  size: "large" | "small";
+}
