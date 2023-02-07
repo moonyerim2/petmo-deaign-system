@@ -16,6 +16,5 @@ interface StyledRoundButtonProps
 }
 
 interface IconButtonProps extends StyledRoundButtonProps {
-  size: StyledRoundButtonSize;
   Icon: () => JSX.Element;
 }
