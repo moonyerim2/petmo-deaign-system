@@ -10,3 +10,8 @@ interface ChipProps extends ChipStyle {
 interface StyledChipProps extends ChipStyle {
   theme: DefaultTheme;
 }
+
+interface ChipsProps {
+  mainTag: string;
+  subTags: string[];
+}
