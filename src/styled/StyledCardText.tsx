@@ -1,0 +1,17 @@
+import styled, { css } from "styled-components";
+
+const StyledCardText = styled.p<StyledCardTextProps>`
+  ${({ isSummary, lineClamp }) => {
+    return css`
+      ${isSummary && {
+        display: "-webkit-box",
+        WebkitBoxOrient: "vertical",
+        WebkitLineClamp: lineClamp,
+        textOverflow: "ellipsis",
+        overflow: "hidden",
+      }}
+    `;
+  }}
+`;
+
+export default StyledCardText;
