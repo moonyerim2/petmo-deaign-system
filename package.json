@@ -25,10 +25,13 @@
   },
   "homepage": "https://github.com/moonyerim2/petmo-design-system#readme",
   "dependencies": {
+    "@types/react-slick": "^0.23.10",
     "@types/styled-components": "^5.1.26",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
