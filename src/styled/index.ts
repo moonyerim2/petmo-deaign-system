@@ -7,3 +7,4 @@ export { default as StyledWrapperFlexCenter } from "./StyledWrapperFlexCenter";
 export { default as StyledWrapperFlexCoulmn } from "./StyledWrapperFlexCoulmn";
 export { default as StyledDot } from "./StyledDot";
 export { default as StyledCardText } from "./StyledCardText";
+export { default as StyledSlider } from "./StyledSlider";
