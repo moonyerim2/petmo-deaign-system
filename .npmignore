@@ -6,3 +6,5 @@ tsconfig.json
 .gitignore
 .storybook
 .storybook-static
+.github
+.github/workflows
