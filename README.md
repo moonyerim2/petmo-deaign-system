@@ -13,6 +13,7 @@ npm install petmo-design-system
 ### Usage
 
 - You can use theme and globalstyle at once
+
 ```jsx
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,4 +25,4 @@ root.render(
 
 ### Homepage
 
-[petmo-storybook](www.petmo-storybook.site)
+[petmo-storybook](http://petmo-storybook.site/)
