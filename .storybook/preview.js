@@ -1,14 +1,11 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
-import GlobalStyle from "../src/theme/GlobalStyle";
-import { theme } from "../src/theme";
+import { PetmoStyleProvider } from "../src/theme";
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
+    <PetmoStyleProvider>
       <Story />
-    </ThemeProvider>
+    </PetmoStyleProvider>
   ),
 ];
 
