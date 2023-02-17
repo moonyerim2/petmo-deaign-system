@@ -5,6 +5,6 @@ tsconfig.json
 .eslintrc.json
 .gitignore
 .storybook
-.storybook-static
+storybook-static
 .github
 .github/workflows
