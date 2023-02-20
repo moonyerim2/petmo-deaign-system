@@ -24,7 +24,7 @@ function CardImages({ imageType, images }: CardImagesProps) {
       {imageType === "image" && (
         <div style={{ position: "relative" }}>
           <RatioImage src={images[0].src} alt={images[0].alt} />
-          <Badge>+{images.length - 1}</Badge>
+          {images.length > 1 && <Badge>+{images.length - 1}</Badge>}
         </div>
       )}
     </>
