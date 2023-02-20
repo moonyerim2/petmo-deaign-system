@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const StyledSlider = styled(Slider)<StyledSliderProps>`
-  margin-top: 20px;
   font-size: 0;
 
   .slick-list {
