@@ -9,6 +9,8 @@ const StyledCardText = styled.p<StyledCardTextProps>`
         WebkitLineClamp: lineClamp,
         textOverflow: "ellipsis",
         overflow: "hidden",
+        height: "66px",
+        lineHeight: "140%",
       }}
     `;
   }}
