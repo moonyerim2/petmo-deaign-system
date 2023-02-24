@@ -8,10 +8,6 @@ interface UserBadgeTextProps {
 }
 
 interface UserBadgeProps extends AvatarProps, UserBadgeTextProps {
-  size: UserBadgeSize;
   withButton: boolean;
   imgSrc: string;
-  userName: string;
-  address: string;
-  elapsedTime?: string | null;
 }
