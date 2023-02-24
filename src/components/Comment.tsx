@@ -18,6 +18,7 @@ const ReplyButton = styled.button`
   ${({ theme: { fontSize, fontWeight, color } }) => {
     return css`
       ${{
+        display: "block",
         paddingLeft: "36px",
         fontSize: fontSize.caption,
         fontWeight: fontWeight.medium,
