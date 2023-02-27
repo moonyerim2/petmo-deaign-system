@@ -1,6 +1,6 @@
 {
   "name": "petmo-design-system",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "design system for petmo project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
