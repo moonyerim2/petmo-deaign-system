@@ -1,5 +1,5 @@
 import React from "react";
-import IconTextButton from "./IconTextButton";
+import IconTextButton from "../components/IconTextButton";
 import CheckIcon from "../assets/CheckIcon";
 
 export default {

@@ -1,5 +1,5 @@
 import React from "react";
-import Textarea from "./Textarea";
+import Textarea from "../components/Textarea";
 
 export default {
   component: Textarea,

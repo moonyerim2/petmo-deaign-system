@@ -1,9 +1,9 @@
 import React from "react";
-import Chip from "./Chip";
+import Chip from "../components/Chip";
 
 export default {
   component: Chip,
-  title: "chip/Chip",
+  title: "Chip/Chip",
 };
 
 const Template = (args) => <Chip {...args}>#마스터즈</Chip>;

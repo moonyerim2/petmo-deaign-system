@@ -1,5 +1,5 @@
 import React from "react";
-import LargeCard from "./LargeCard";
+import LargeCard from "../components/LargeCard";
 
 export default {
   component: LargeCard,

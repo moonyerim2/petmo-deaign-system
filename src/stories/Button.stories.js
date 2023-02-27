@@ -1,10 +1,10 @@
 import React from "react";
 
-import Button from "./Button";
+import Button from "../components/Button";
 
 export default {
   component: Button,
-  title: "button/Button",
+  title: "Button/Button",
 };
 
 const Template = (args) => <Button {...args}>버튼을 클릭하세요.</Button>;

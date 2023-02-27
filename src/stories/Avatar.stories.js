@@ -1,9 +1,9 @@
 import React from "react";
-import Avatar from "./Avatar";
+import Avatar from "../components/Avatar";
 
 export default {
   component: Avatar,
-  title: "avatar/Avatar",
+  title: "Avatar/Avatar",
 };
 
 const Template = (args) => <Avatar {...args} />;

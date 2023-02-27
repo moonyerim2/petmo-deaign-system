@@ -1,9 +1,9 @@
 import React from "react";
-import Comment from "./Comment";
+import Comment from "../components/Comment";
 
 export default {
   component: Comment,
-  title: "Comment",
+  title: "Comment/Comment",
 };
 
 const Template = (args) => <Comment {...args} />;
