@@ -1,6 +1,16 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import UserBadge from "./UserBadge";
+import IndicatorIcon from "../assets/IndicatorIcon";
+
+const Wrapper = styled.div`
+  margin-bottom: 12px;
+`;
+
+const StyledUserBadge = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 const CommentText = styled.p`
   ${({ theme: { fontSize, color } }) => {
@@ -13,6 +23,8 @@ const CommentText = styled.p`
     `;
   }}
 `;
+
+const Indicator = styled.button``;
 
 const ReplyButton = styled.button`
   ${({ theme: { fontSize, fontWeight, color } }) => {
@@ -28,13 +40,31 @@ const ReplyButton = styled.button`
   }}
 `;
 
-function Comment({ userBadgeData, content, depth }: CommentProps) {
+function Comment({
+  isMyComment = false,
+  userBadgeData,
+  content,
+  depth,
+  onClickReply,
+  onClickIndicator,
+}: CommentProps) {
   return (
-    <>
-      <UserBadge {...userBadgeData} size="small" />
+    <Wrapper>
+      <StyledUserBadge>
+        <UserBadge {...userBadgeData} size="small" />
+        {isMyComment && (
+          <Indicator type="button" onClick={onClickIndicator}>
+            <IndicatorIcon />
+          </Indicator>
+        )}
+      </StyledUserBadge>
       <CommentText>{content}</CommentText>
-      {depth === 1 && <ReplyButton>답글달기</ReplyButton>}
-    </>
+      {depth === 1 && (
+        <ReplyButton type="button" onClick={onClickReply}>
+          답글달기
+        </ReplyButton>
+      )}
+    </Wrapper>
   );
 }
 
