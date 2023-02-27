@@ -3,8 +3,15 @@ import styled, { css } from "styled-components";
 import UserBadge from "./UserBadge";
 import IndicatorIcon from "../assets/IndicatorIcon";
 
-const Wrapper = styled.div`
-  margin-bottom: 12px;
+const Wrapper = styled.div<{ depth: 1 | 2 }>`
+  ${({ depth }) => {
+    return css`
+      ${{
+        paddingLeft: depth === 2 ? "36px" : "0",
+        marginBottom: "12px",
+      }}
+    `;
+  }}
 `;
 
 const StyledUserBadge = styled.div`
@@ -49,7 +56,7 @@ function Comment({
   onClickIndicator,
 }: CommentProps) {
   return (
-    <Wrapper>
+    <Wrapper depth={depth}>
       <StyledUserBadge>
         <UserBadge {...userBadgeData} size="small" />
         {isMyComment && (

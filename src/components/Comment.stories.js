@@ -42,5 +42,5 @@ MyComment.args = {
     elapsedTime: "2분전",
   },
   content: "안녕하세요~",
-  depth: 2,
+  depth: 1,
 };
