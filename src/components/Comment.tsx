@@ -23,7 +23,7 @@ const CommentText = styled.p`
   ${({ theme: { fontSize, color } }) => {
     return css`
       ${{
-        paddingLeft: "36px",
+        padding: "0 36px",
         fontSize: fontSize.body2,
         color: color.black,
       }}

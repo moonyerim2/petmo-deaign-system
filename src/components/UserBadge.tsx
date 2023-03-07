@@ -19,7 +19,7 @@ function UserBadge({
 }: UserBadgeProps) {
   return (
     <StyledWrapper size={size}>
-      <Avatar {...{ size, withButton, imgSrc }} />
+      {imgSrc && <Avatar {...{ size, withButton, imgSrc }} />}
       <UserBadgeText {...{ size, userName, address, elapsedTime }} />
     </StyledWrapper>
   );

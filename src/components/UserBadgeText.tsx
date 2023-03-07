@@ -1,11 +1,12 @@
 import React from "react";
 import styled, { css, DefaultTheme } from "styled-components";
-import {
-  StyledWrapperFlexCenter,
-  StyledWrapperFlexCoulmn,
-  StyledDot,
-} from "../styled";
+import { StyledWrapperFlexCenter, StyledDot } from "../styled";
 import { userBadgeTheme } from "../theme";
+
+const Wrapper = styled.div<{ hasAddress: boolean }>`
+  display: flex;
+  flex-direction: ${({ hasAddress }) => (hasAddress ? "column" : "row")};
+`;
 
 const Name = styled.span`
   ${({ theme, size }: { theme: DefaultTheme; size: UserBadgeSize }) => {
@@ -14,6 +15,7 @@ const Name = styled.span`
       ${{
         display: "inline-block",
         color: theme.color.black,
+        marginRight: "7px",
         ...name[size],
       }}
     `;
@@ -40,14 +42,18 @@ function UserBadgeTextSmall({
   elapsedTime,
 }: UserBadgeTextProps) {
   return (
-    <StyledWrapperFlexCoulmn>
+    <Wrapper hasAddress={!!address}>
       <Name size={size}>{userName}</Name>
       <StyledWrapperFlexCenter>
-        <Info size={size}>{address}</Info>
-        {elapsedTime && <StyledDot />}
+        {address && (
+          <>
+            <Info size={size}>{address}</Info>
+            <StyledDot />
+          </>
+        )}
         <Info size={size}>{elapsedTime}</Info>
       </StyledWrapperFlexCenter>
-    </StyledWrapperFlexCoulmn>
+    </Wrapper>
   );
 }
 
